@@ -1,6 +1,6 @@
 /*
-· Recreate the logic below with the ternary operator (?). 
-The ternary operator can be used to look for null but what it’s really doing is 
+· Recreate the logic below with the ternary operator (?).
+The ternary operator can be used to look for null but what it’s really doing is
 creating conditional logic based on a true/false response. If null then false is returned.
 
     var myVal: number = null;
@@ -18,16 +18,10 @@ creating conditional logic based on a true/false response. If null then false is
 */
 // Vamos!
 console.log("Vamos!");
-
-let myVal: number = null;
-let result: number = null;
-
-
+var myVal = null;
+var result = null;
 result = myVal ? myVal : 0;
 console.log(result);
-
 myVal = 5;
-
-
 result = myVal ? myVal : 0;
 console.log(result);

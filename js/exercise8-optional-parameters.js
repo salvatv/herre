@@ -4,20 +4,18 @@ la anotación "interpolated". Por ejemplo:  console.log(`nombre: $(atributoNombr
 
 · Crear una función con un par de parámetros requeridos y un par de parámetros opcionales (?). Que los muestre por consola utilizando
 la anotación "interpolated".
-· Crear una función con un par de parámetros requeridos y un par de parámetros con valores por defecto. 
+· Crear una función con un par de parámetros requeridos y un par de parámetros con valores por defecto.
 Que los muestre por consola utilizando
 la anotación "interpolated".
 */
 // Vamos!
 console.log("Vamos!");
-
-function imprimir(nombre: string, edad: number){
-    console.log(`nombre: ${nombre} edad: ${edad}`);
+function imprimir(nombre, edad) {
+    console.log("nombre: " + nombre + " edad: " + edad);
 }
 imprimir("pepe", 24);
-
-function imprimir2(nombre: string, edad: number, descripcion?: string){
-    console.log(`nombre: ${nombre} edad: ${edad} descripcion ${descripcion}`);
+function imprimir2(nombre, edad, descripcion) {
+    console.log("nombre: " + nombre + " edad: " + edad + " descripcion " + descripcion);
 }
 imprimir2("pepe", 24, "feo");
 imprimir2("pepe", 24);
