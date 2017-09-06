@@ -10,3 +10,15 @@ var variable = (parametros): tipo => {
 */
 // Vamos!
 console.log("Vamos!");
+
+function sumar(param1: number, param2: number){
+  let suma = param1 + param2;
+  console.log(`el resultado es: ${suma}`);
+}
+sumar(2, 3);
+
+var variable = function(x: number, y: number): number { return x+y; };
+console.log(variable(4,4));
+
+var foo = (x: number, y: number) => x+y;
+console.log(foo(5,5));
