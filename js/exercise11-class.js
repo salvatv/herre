@@ -14,9 +14,6 @@ nombre y los apellidos.
 console.log("Vamos!");
 var objeto = /** @class */ (function () {
     function objeto(nombre, numero, tipo) {
-        this.nombre = nombre;
-        this.numero = numero;
-        this.tipo = tipo;
     }
     return objeto;
 }());
@@ -28,11 +25,11 @@ var Matematicas = /** @class */ (function () {
         this.numero1 = numero1;
         this.numero2 = numero2;
     }
-    Matematicas.prototype.suma = function () {
-        return "resultado : " + (this.numero1 + this.numero2);
+    Matematicas.prototype.suma = function (numero1, numero2) {
+        return "resultado :  " + (this.numero1 + this.numero2);
     };
     return Matematicas;
 }());
 var suma = new Matematicas(1, 2);
 console.log("muestro la suma");
-console.log(suma.suma());
+console.log(suma.suma(1, 2));

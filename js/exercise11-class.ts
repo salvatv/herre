@@ -14,14 +14,8 @@ nombre y los apellidos.
 console.log("Vamos!");
 
 class objeto {
-    nombre: string;
-    numero: number;
-    tipo: string;
-    constructor(nombre: string, numero:number,tipo:string) {
-        this.nombre= nombre;
-        this.numero=numero;
-        this.tipo=tipo;
-    }
+   
+    constructor(nombre: string, numero:number,tipo:string) {}
 }
 
 let objeto1 = new objeto("pepe", 1,"persona");
@@ -29,17 +23,17 @@ console.log("muestro el objeto");
 console.log(objeto1);
 
 class Matematicas {
-    numero1: number;
-    numero2: number;
+    private numero1: number;
+    private numero2: number;
     constructor(numero1: number, numero2: number) {
         this.numero1 = numero1;
         this.numero2 = numero2;
     }
-    suma() {
-        return "resultado : " + (this.numero1 + this.numero2);
+    public suma(numero1:number, numero2:number) {
+        return "resultado :  "+ (this.numero1 + this.numero2);
     }
 }
 
-let suma = new Matematicas(1, 2);
+let suma = new Matematicas(1,2);
 console.log("muestro la suma");
-console.log(suma.suma());
+console.log(suma.suma(1,2));
